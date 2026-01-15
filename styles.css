@@ -15,15 +15,18 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 24px;
+  text-align: center;
 }
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.95em;
 }
 th, td {
   padding: 10px;
   border-bottom: 1px solid #eee;
   text-align: center;
+  font-size: 0.95em;
 }
 
 .points-3 {
@@ -38,6 +41,23 @@ th, td {
 th {
   background: #e41b17;
   color: #fff;
+}
+
+.toggle-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 24px;
+  background: #e41b17;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.toggle-btn:hover {
+  background: #b71c1c;
 }
 tr:last-child td {
   border-bottom: none;

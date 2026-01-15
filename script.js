@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add toggle button
   const btn = document.createElement('button');
   btn.textContent = 'Exclude Promoted Teams';
-  btn.style.marginBottom = '20px';
+  btn.className = 'toggle-btn';
   let exclude = false;
   btn.addEventListener('click', () => {
     exclude = !exclude;
