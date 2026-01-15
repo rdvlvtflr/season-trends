@@ -1,0 +1,335 @@
+{
+  "team": "Arsenal",
+  "season": "2025",
+  "fixtures": [
+    {
+      "date": "2025-08-17T15:30:00Z",
+      "opponent": "Manchester United FC",
+      "home": false,
+      "points": 3,
+      "result": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-08-23T16:30:00Z",
+      "opponent": "Leeds United FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 5,
+        "away": 0
+      }
+    },
+    {
+      "date": "2025-08-31T15:30:00Z",
+      "opponent": "Liverpool FC",
+      "home": false,
+      "points": 0,
+      "result": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "date": "2025-09-13T11:30:00Z",
+      "opponent": "Nottingham Forest FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    {
+      "date": "2025-09-21T15:30:00Z",
+      "opponent": "Manchester City FC",
+      "home": true,
+      "points": 1,
+      "result": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-09-28T15:30:00Z",
+      "opponent": "Newcastle United FC",
+      "home": false,
+      "points": 3,
+      "result": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "date": "2025-10-04T14:00:00Z",
+      "opponent": "West Ham United FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "date": "2025-10-18T16:30:00Z",
+      "opponent": "Fulham FC",
+      "home": false,
+      "points": 3,
+      "result": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-10-26T14:00:00Z",
+      "opponent": "Crystal Palace FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "date": "2025-11-01T15:00:00Z",
+      "opponent": "Burnley FC",
+      "home": false,
+      "points": 3,
+      "result": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "date": "2025-11-08T17:30:00Z",
+      "opponent": "Sunderland AFC",
+      "home": false,
+      "points": 1,
+      "result": {
+        "home": 2,
+        "away": 2
+      }
+    },
+    {
+      "date": "2025-11-23T16:30:00Z",
+      "opponent": "Tottenham Hotspur FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 4,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-11-30T16:30:00Z",
+      "opponent": "Chelsea FC",
+      "home": false,
+      "points": 1,
+      "result": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-12-03T19:30:00Z",
+      "opponent": "Brentford FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "date": "2025-12-06T12:30:00Z",
+      "opponent": "Aston Villa FC",
+      "home": false,
+      "points": 0,
+      "result": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-12-13T20:00:00Z",
+      "opponent": "Wolverhampton Wanderers FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-12-20T20:00:00Z",
+      "opponent": "Everton FC",
+      "home": false,
+      "points": 3,
+      "result": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-12-27T15:00:00Z",
+      "opponent": "Brighton & Hove Albion FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "date": "2025-12-30T20:15:00Z",
+      "opponent": "Aston Villa FC",
+      "home": true,
+      "points": 3,
+      "result": {
+        "home": 4,
+        "away": 1
+      }
+    },
+    {
+      "date": "2026-01-03T17:30:00Z",
+      "opponent": "AFC Bournemouth",
+      "home": false,
+      "points": 3,
+      "result": {
+        "home": 2,
+        "away": 3
+      }
+    },
+    {
+      "date": "2026-01-08T20:00:00Z",
+      "opponent": "Liverpool FC",
+      "home": true,
+      "points": 1,
+      "result": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "date": "2026-01-17T17:30:00Z",
+      "opponent": "Nottingham Forest FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-01-25T16:30:00Z",
+      "opponent": "Manchester United FC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-01-31T15:00:00Z",
+      "opponent": "Leeds United FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-02-07T15:00:00Z",
+      "opponent": "Sunderland AFC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-02-12T20:00:00Z",
+      "opponent": "Brentford FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-02-22T16:30:00Z",
+      "opponent": "Tottenham Hotspur FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-03-01T16:30:00Z",
+      "opponent": "Chelsea FC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-03-04T20:00:00Z",
+      "opponent": "Brighton & Hove Albion FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-03-14T15:00:00Z",
+      "opponent": "Everton FC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-03-21T15:00:00Z",
+      "opponent": "Wolverhampton Wanderers FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-04-11T14:00:00Z",
+      "opponent": "AFC Bournemouth",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-04-18T14:00:00Z",
+      "opponent": "Manchester City FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-04-25T14:00:00Z",
+      "opponent": "Newcastle United FC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-05-02T14:00:00Z",
+      "opponent": "Fulham FC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-05-09T14:00:00Z",
+      "opponent": "West Ham United FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-05-17T14:00:00Z",
+      "opponent": "Burnley FC",
+      "home": true,
+      "points": null,
+      "result": null
+    },
+    {
+      "date": "2026-05-24T15:00:00Z",
+      "opponent": "Crystal Palace FC",
+      "home": false,
+      "points": null,
+      "result": null
+    }
+  ]
+}

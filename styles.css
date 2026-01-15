@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+#comparison-table {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 24px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.points-3 {
+  background: #d4f8e8;
+}
+.points-1 {
+  background: #e0f0ff;
+}
+.points-0 {
+  background: #ffe0e0;
+}
+th {
+  background: #e41b17;
+  color: #fff;
+}
+tr:last-child td {
+  border-bottom: none;
+}
