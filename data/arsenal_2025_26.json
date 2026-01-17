@@ -216,8 +216,11 @@
       "date": "2026-01-17T17:30:00Z",
       "opponent": "Nottingham Forest FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 1,
+      "result": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
       "date": "2026-01-25T16:30:00Z",
