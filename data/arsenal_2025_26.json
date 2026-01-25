@@ -226,8 +226,11 @@
       "date": "2026-01-25T16:30:00Z",
       "opponent": "Manchester United FC",
       "home": true,
-      "points": null,
-      "result": null
+      "points": 0,
+      "result": {
+        "home": 2,
+        "away": 3
+      }
     },
     {
       "date": "2026-01-31T15:00:00Z",
