@@ -236,8 +236,11 @@
       "date": "2026-01-31T15:00:00Z",
       "opponent": "Leeds United FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 3,
+      "result": {
+        "home": 0,
+        "away": 4
+      }
     },
     {
       "date": "2026-02-07T15:00:00Z",
