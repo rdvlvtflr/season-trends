@@ -257,6 +257,13 @@
       "result": null
     },
     {
+      "date": "2026-02-18T20:00:00Z",
+      "opponent": "Wolverhampton Wanderers FC",
+      "home": false,
+      "points": null,
+      "result": null
+    },
+    {
       "date": "2026-02-22T16:30:00Z",
       "opponent": "Tottenham Hotspur FC",
       "home": false,
@@ -281,13 +288,6 @@
       "date": "2026-03-15T14:00:00Z",
       "opponent": "Everton FC",
       "home": true,
-      "points": null,
-      "result": null
-    },
-    {
-      "date": "2026-03-21T15:00:00Z",
-      "opponent": "Wolverhampton Wanderers FC",
-      "home": false,
       "points": null,
       "result": null
     },
