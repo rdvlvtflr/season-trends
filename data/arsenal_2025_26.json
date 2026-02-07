@@ -246,8 +246,11 @@
       "date": "2026-02-07T15:00:00Z",
       "opponent": "Sunderland AFC",
       "home": true,
-      "points": null,
-      "result": null
+      "points": 3,
+      "result": {
+        "home": 3,
+        "away": 0
+      }
     },
     {
       "date": "2026-02-12T20:00:00Z",
