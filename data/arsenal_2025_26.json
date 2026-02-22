@@ -276,8 +276,11 @@
       "date": "2026-02-22T16:30:00Z",
       "opponent": "Tottenham Hotspur FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 3,
+      "result": {
+        "home": 1,
+        "away": 4
+      }
     },
     {
       "date": "2026-03-01T16:30:00Z",
