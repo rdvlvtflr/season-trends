@@ -296,8 +296,11 @@
       "date": "2026-03-04T19:30:00Z",
       "opponent": "Brighton & Hove Albion FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 3,
+      "result": {
+        "home": 0,
+        "away": 1
+      }
     },
     {
       "date": "2026-03-14T17:30:00Z",
