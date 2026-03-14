@@ -306,8 +306,11 @@
       "date": "2026-03-14T17:30:00Z",
       "opponent": "Everton FC",
       "home": true,
-      "points": null,
-      "result": null
+      "points": 3,
+      "result": {
+        "home": 2,
+        "away": 0
+      }
     },
     {
       "date": "2026-04-11T11:30:00Z",
