@@ -326,8 +326,11 @@
       "date": "2026-04-19T15:30:00Z",
       "opponent": "Manchester City FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 0,
+      "result": {
+        "home": 2,
+        "away": 1
+      }
     },
     {
       "date": "2026-04-25T16:30:00Z",
