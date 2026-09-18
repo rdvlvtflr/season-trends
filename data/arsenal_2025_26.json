@@ -376,8 +376,11 @@
       "date": "2026-05-24T15:00:00Z",
       "opponent": "Crystal Palace FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 3,
+      "result": {
+        "home": 1,
+        "away": 2
+      }
     }
   ]
 }
