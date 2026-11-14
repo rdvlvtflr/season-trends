@@ -1,0 +1,22 @@
+{
+  "currentSeason": "2026_27",
+  "previousSeason": "2025_26",
+  "promotedTeams": [
+    "Coventry City FC",
+    "Ipswich Town FC",
+    "Hull City AFC"
+  ],
+  "relegatedTeams": [
+    "West Ham United FC",
+    "Burnley FC",
+    "Wolverhampton Wanderers FC"
+  ],
+  "teamPairs": {
+    "Coventry City FC": "West Ham United FC",
+    "West Ham United FC": "Coventry City FC",
+    "Ipswich Town FC": "Burnley FC",
+    "Burnley FC": "Ipswich Town FC",
+    "Hull City AFC": "Wolverhampton Wanderers FC",
+    "Wolverhampton Wanderers FC": "Hull City AFC"
+  }
+}
