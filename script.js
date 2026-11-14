@@ -1,41 +1,23 @@
-async function fetchData(season) {
-  const response = await fetch(`data/arsenal_${season}.json`);
+async function fetchData(file) {
+  const response = await fetch(file);
+  if (!response.ok) throw new Error(`Could not load ${file}: ${response.status}`);
   return response.json();
 }
 
-const promotedTeams = [
-  'Leeds United FC',
-  'Burnley FC',
-  'Sunderland AFC'
-];
-const relegatedTeams = [
-  'Leicester City FC',
-  'Southampton FC',
-  'Ipswich Town FC'
-];
-const teamPairs = {
-  'Leeds United FC': 'Leicester City FC',
-  'Burnley FC': 'Southampton FC',
-  'Sunderland AFC': 'Ipswich Town FC',
-  'Leicester City FC': 'Leeds United FC',
-  'Southampton FC': 'Burnley FC',
-  'Ipswich Town FC': 'Sunderland AFC'
-};
-
-function createTable(current, previous, excludePromoted) {
+function createTable(current, previous, excludePromoted, config) {
   const table = document.createElement('table');
   const header = document.createElement('tr');
   header.innerHTML = `
     <th>Fixture</th>
-    <th>2024/25 Points</th>
-    <th>2025/26 Points</th>
+    <th>${config.previousSeason.replace('_', '/')} Points</th>
+    <th>${config.currentSeason.replace('_', '/')} Points</th>
   `;
   table.appendChild(header);
 
   // Filter fixtures if excluding promoted teams
   let filteredFixtures = current.fixtures;
   if (excludePromoted) {
-    filteredFixtures = filteredFixtures.filter(f => !promotedTeams.includes(f.opponent));
+    filteredFixtures = filteredFixtures.filter(f => !config.promotedTeams.includes(f.opponent));
   }
 
   // Aggregate points
@@ -44,8 +26,8 @@ function createTable(current, previous, excludePromoted) {
     const cur = filteredFixtures[i];
     if (typeof cur.points === 'number') {
       let prevOpponent = cur.opponent;
-      if (teamPairs[cur.opponent]) prevOpponent = teamPairs[cur.opponent];
-      if (excludePromoted && (promotedTeams.includes(cur.opponent) || relegatedTeams.includes(prevOpponent))) continue;
+      if (config.teamPairs[cur.opponent]) prevOpponent = config.teamPairs[cur.opponent];
+      if (excludePromoted && (config.promotedTeams.includes(cur.opponent) || config.relegatedTeams.includes(prevOpponent))) continue;
       const prev = previous.fixtures.find(f => f.opponent === prevOpponent && f.home === cur.home) || {};
       const prevPoints = typeof prev.points === 'number' ? prev.points : 0;
       delta += cur.points - prevPoints;
@@ -65,11 +47,11 @@ function createTable(current, previous, excludePromoted) {
     const cur = filteredFixtures[i];
     let prevOpponent = cur.opponent;
     let pairedName = '';
-    if (teamPairs[cur.opponent]) {
-      prevOpponent = teamPairs[cur.opponent];
+    if (config.teamPairs[cur.opponent]) {
+      prevOpponent = config.teamPairs[cur.opponent];
       pairedName = prevOpponent;
     }
-    if (excludePromoted && (promotedTeams.includes(cur.opponent) || relegatedTeams.includes(prevOpponent))) continue;
+    if (excludePromoted && (config.promotedTeams.includes(cur.opponent) || config.relegatedTeams.includes(prevOpponent))) continue;
     const prev = previous.fixtures.find(f => f.opponent === prevOpponent && f.home === cur.home) || {};
     function pointsClass(p) {
       if (p === 3) return 'points-3';
@@ -89,21 +71,27 @@ function createTable(current, previous, excludePromoted) {
 }
 
 async function renderComparison(excludePromoted = false) {
-  const [current, previous] = await Promise.all([
-    fetchData('2025_26'),
-    fetchData('2024_25')
-  ]);
   const container = document.getElementById('comparison-table');
-  container.innerHTML = '';
-  const table = createTable(current, previous, excludePromoted);
-  container.appendChild(table);
+  try {
+    const config = await fetchData('season-config.json');
+    const [current, previous] = await Promise.all([
+      fetchData(`data/arsenal_${config.currentSeason}.json`),
+      fetchData(`data/arsenal_${config.previousSeason}.json`)
+    ]);
+    container.innerHTML = '';
+    const table = createTable(current, previous, excludePromoted, config);
+    container.appendChild(table);
+  } catch (error) {
+    console.error('Failed to render fixture comparison:', error);
+    container.textContent = 'Unable to load the fixture comparison. Check the browser console for details.';
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   // Add toggle button
   const btn = document.createElement('button');
   btn.textContent = 'Exclude Promoted Teams';
-  btn.className = 'toggle-btn';
+  btn.style.marginBottom = '20px';
   let exclude = false;
   btn.addEventListener('click', () => {
     exclude = !exclude;
