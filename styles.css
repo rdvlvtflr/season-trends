@@ -175,8 +175,36 @@ tr:last-child td {
     border-radius: 10px;
   }
 
+  table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
   th,
   td {
-    padding: 11px 9px;
+    padding: 9px 5px;
+    overflow-wrap: anywhere;
+  }
+
+  th {
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+  }
+
+  td {
+    font-size: 0.82rem;
+  }
+
+  th:first-child,
+  td:first-child {
+    width: 45%;
+  }
+
+  small {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    font-size: 0.6rem;
+    line-height: 1.2;
   }
 }
