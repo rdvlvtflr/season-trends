@@ -4,6 +4,19 @@ async function fetchData(file) {
   return response.json();
 }
 
+function pointsTrend(currentPoints, previousPoints) {
+  if (typeof currentPoints !== 'number' || typeof previousPoints !== 'number') return '';
+
+  const difference = currentPoints - previousPoints;
+  if (difference === 0) return '';
+
+  const direction = difference > 0 ? 'up' : 'down';
+  const change = Math.abs(difference);
+  const label = `${change} point${change === 1 ? '' : 's'} ${difference > 0 ? 'gained' : 'lost'} compared to previous season`;
+  const arrow = difference > 0 ? '&uarr;' : '&darr;';
+  return `<span class="trend-arrow trend-${direction}" role="img" aria-label="${label}" title="${label}">${arrow}</span>`;
+}
+
 function createTable(current, previous, excludePromoted, config) {
   const table = document.createElement('table');
   const header = document.createElement('tr');
@@ -63,7 +76,7 @@ function createTable(current, previous, excludePromoted, config) {
     row.innerHTML = `
       <td>${cur.opponent} (${cur.home ? 'Home' : 'Away'})</td>
       <td class="${pointsClass(prev.points)}">${prev.points ?? '-'}${pairedName ? `<br><small>(${pairedName})</small>` : ''}</td>
-      <td class="${pointsClass(cur.points)}">${cur.points ?? '-'}</td>
+      <td class="${pointsClass(cur.points)}">${cur.points ?? '-'}${pointsTrend(cur.points, prev.points)}</td>
     `;
     table.appendChild(row);
   }

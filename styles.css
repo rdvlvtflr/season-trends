@@ -125,6 +125,22 @@ tr:nth-of-type(n + 3):hover td:not(.points-3):not(.points-1):not(.points-0) {
   font-weight: 650;
 }
 
+.trend-arrow {
+  display: inline-block;
+  margin-left: 0.35em;
+  font-size: 0.75em;
+  line-height: 1;
+  vertical-align: 0.12em;
+}
+
+.trend-up {
+  color: #28643a;
+}
+
+.trend-down {
+  color: #a43a32;
+}
+
 small {
   color: #65747d;
   font-size: 0.78rem;
