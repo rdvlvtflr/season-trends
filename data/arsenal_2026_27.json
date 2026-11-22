@@ -106,8 +106,11 @@
       "date": "2026-11-21T17:30:00Z",
       "opponent": "Newcastle United FC",
       "home": false,
-      "points": null,
-      "result": null
+      "points": 1,
+      "result": {
+        "home": 2,
+        "away": 2
+      }
     },
     {
       "date": "2026-11-29T16:30:00Z",
@@ -180,14 +183,14 @@
       "result": null
     },
     {
-      "date": "2027-01-23T15:00:00Z",
+      "date": "2027-01-23T17:30:00Z",
       "opponent": "Newcastle United FC",
       "home": true,
       "points": null,
       "result": null
     },
     {
-      "date": "2027-01-30T15:00:00Z",
+      "date": "2027-01-31T16:30:00Z",
       "opponent": "Manchester City FC",
       "home": false,
       "points": null,
